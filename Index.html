@@ -1,0 +1,157 @@
+Claro, aquí tienes el código base para una página web minimalista que permita personalizar panetones con opciones de toppings y tipos de harina.
+
+1. index.html (Página principal)
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personaliza tu Panetón</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Personaliza tu Panetón</h1>
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#sobre-mi">Sobre mí</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <section id="inicio">
+        <h2>¡Crea el panetón perfecto!</h2>
+        <p>Elige tus toppings favoritos y el tipo de harina para personalizar tu panetón.</p>
+        <form id="personalizar-form">
+            <label for="harina">Tipo de Harina:</label>
+            <select id="harina" name="harina">
+                <option value="tradicional">Tradicional</option>
+                <option value="integral">Integral</option>
+                <option value="sin-gluten">Sin Gluten</option>
+            </select>
+
+            <label for="toppings">Toppings:</label>
+            <select id="toppings" name="toppings" multiple>
+                <option value="chispas-chocolate">Chispas de Chocolate</option>
+                <option value="frutos-secos">Frutos Secos</option>
+                <option value="frutas-confitadas">Frutas Confitadas</option>
+                <option value="coco">Coco</option>
+            </select>
+
+            <button type="submit">Personalizar</button>
+        </form>
+    </section>
+
+    <section id="sobre-mi">
+        <h2>Sobre mí</h2>
+        <p>Hola, soy Jhennyfer, apasionada por la repostería artesanal. Quiero ofrecerte la experiencia de crear tu propio panetón con ingredientes de alta calidad.</p>
+    </section>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <form id="contacto-form">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Personaliza tu Panetón</p>
+    </footer>
+</body>
+</html>
+
+2. styles.css (Estilos minimalistas)
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f4f4f9;
+    text-align: center;
+}
+
+header {
+    background-color: #5d6d7e;
+    padding: 1rem;
+    color: white;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+nav a {
+    color: white;
+    margin: 0 1rem;
+    text-decoration: none;
+}
+
+section {
+    margin: 2rem 0;
+    padding: 1rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #5d6d7e;
+}
+
+form {
+    display: inline-block;
+    text-align: left;
+    margin-top: 1rem;
+}
+
+label {
+    display: block;
+    margin: 0.5rem 0 0.2rem;
+}
+
+input, select, textarea, button {
+    width: 100%;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #5d6d7e;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3e4c5b;
+}
+
+footer {
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: #5d6d7e;
+    color: white;
+}
+
+3. script.js (Opcional: Validación de formularios)
+
+Si quieres un archivo JavaScript para añadir validación o algún efecto, podríamos incluirlo en el proyecto. Puedes crear uno si es necesario y agregarlo en el HTML de esta forma:
+
+<script src="script.js"></script>
+
+Este código te dará una página web sencilla con opciones para personalizar el panetón, una breve sección sobre ti, y un formulario de contacto. Puedes agregarlo a tu repositorio en GitHub y verlo en línea siguiendo los pasos anteriores. ¡Espero que te guste!
+
